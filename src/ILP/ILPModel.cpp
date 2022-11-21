@@ -42,8 +42,8 @@ vector<vector<int>> createDistanceMatrixFromCoordinates(vector<pair<float, float
 void twoIndexVehicleFlowFormulation(int N, int Q, int K, vector<vector<int>> distanceMatrix,
                                     vector<int> demands, vector<pair<int, int>> timeWindows) {
     /// ILP two-index flow formulation for CVRPTW, as in https://arxiv.org/pdf/1606.01935.pdf .
-    GRBEnv env;
-    GRBModel model(env);
+    GRBEnv *env;
+    GRBModel model(*env);
     model.set(GRB_StringAttr_ModelName, "VRP-TW ILP model");
 
     vector<vector<GRBVar>> x;
