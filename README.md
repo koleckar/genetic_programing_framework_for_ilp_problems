@@ -1,6 +1,6 @@
 # Genetic programing framework for ILP problem
 <h4>Genetic programing framework for various ILP problems with instances representable as permutation with repetition</h4>
-______________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________
 <h5>Work motivation</h5>
 This work aims at creating metaheuristics optimization solver/framework (mof)[1] for optimization problems with solutions that can be meaningfully represented as permutations with repetition and variable length (pwravl). 
 The permutations and permutations with repetition being subset of prwavl. 
